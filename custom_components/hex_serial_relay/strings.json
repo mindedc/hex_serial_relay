@@ -1,0 +1,69 @@
+{
+  "title": "Hex Proto Serial Relay (RS-232)",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configure Serial Relay",
+        "description": "Select the serial port and configure connection parameters. The device will be probed on submit to detect the number of relay channels. Default serial settings (9600, 8, N, 1) match the factory configuration.",
+        "data": {
+          "serial_port":   "Serial Port",
+          "baud_rate":     "Baud Rate",
+          "bytesize":      "Data Bits",
+          "stopbits":      "Stop Bits",
+          "parity":        "Parity",
+          "invert_state":  "Invert relay state (use if ON/OFF appear reversed in the UI)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Unable to communicate with a relay controller on the selected port. Check the port, cable, and serial parameters.",
+      "no_ports": "No serial ports were detected on this system.",
+      "unknown": "An unexpected error occurred."
+    },
+    "abort": {
+      "already_configured": "This serial port is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Reconfigure Serial Relay",
+        "description": "Update any setting and click Submit. The device will be re-probed to confirm connectivity.",
+        "data": {
+          "serial_port":   "Serial Port",
+          "baud_rate":     "Baud Rate",
+          "bytesize":      "Data Bits",
+          "stopbits":      "Stop Bits",
+          "parity":        "Parity",
+          "invert_state":  "Invert relay state (use if ON/OFF appear reversed in the UI)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Unable to communicate with a relay controller on the selected port. Check the port, cable, and serial parameters.",
+      "no_ports": "No serial ports were detected on this system.",
+      "unknown": "An unexpected error occurred."
+    }
+  },
+  "reconfigure": {
+    "step": {
+      "reconfigure": {
+        "title": "Reconfigure Serial Relay",
+        "description": "Update any setting and click Submit. The device will be re-probed to confirm connectivity.",
+        "data": {
+          "serial_port":   "Serial Port",
+          "baud_rate":     "Baud Rate",
+          "bytesize":      "Data Bits",
+          "stopbits":      "Stop Bits",
+          "parity":        "Parity",
+          "invert_state":  "Invert relay state (use if ON/OFF appear reversed in the UI)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Unable to communicate with a relay controller on the selected port. Check the port, cable, and serial parameters.",
+      "no_ports": "No serial ports were detected on this system.",
+      "unknown": "An unexpected error occurred."
+    }
+  }
+}
